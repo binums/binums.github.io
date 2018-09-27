@@ -95,4 +95,7 @@ footer {
             .menu div {
                 margin-right: 0;
             }
+            html {
+                font-size: 43.8%;
+            }
         }
