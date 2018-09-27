@@ -95,7 +95,8 @@ footer {
             .menu div {
                 margin-right: 0;
             }
+        }
+@media screen and (max-width: 400px) {
             html {
                 font-size: 43.8%;
             }
-        }
