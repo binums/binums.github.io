@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="shortcut icon" type="image/png" href="img/book-vector-symbol-2.png">
+    <title>BooksBee</title>
+    <style>
+        .collections {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+        }
+        
+        figure {
+            margin: 1rem;
+            overflow: hidden;
+            position: relative;
+            background-color: none;
+            transition: background-color .5s;
+            z-index: 1;
+        }
+        
+        figure>img {
+            width: calc(100% + 1rem);
+            height: calc(100% + 1rem);
+            opacity: .7;
+            transform: translate3d(0, -2rem, 0) scale(1.12);
+            transition: all .5s;
+        }
+        
+        figcaption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+        
+        figcaption h3 {
+            display: inline-block;
+            background-color: #000;
+            padding: .7rem;
+            border-radius: .4rem;
+        }
+        
+        .options a {
+            display: inline-block;
+            flex-direction: row;
+            text-decoration: none;
+            padding: .5rem;
+            margin-top: 2rem;
+            font-weight: bold;
+            background-color: sienna;
+            color: #fff;
+            border-radius: .4rem;
+        }
+        
+        .options {
+            opacity: 0;
+            transform: scale(1.3);
+            transition: all .5s;
+        }
+        
+        figure:hover {
+            background-color: #000;
+        }
+        
+        figure:hover img {
+            transform: translate3d(0, 0, 0) scale(1);
+            opacity: .4;
+        }
+        
+        figure:hover .options {
+            opacity: 1;
+            transform: scale(1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="main-head">
+            <a href="index.html" target="_self"> BooksBee.co.in</a>
+        </div>
+        <div class="menu">
+            <div><a class="current" href="shelf.html" target="_self">Shelf</a></div>
+            <div><a href="mySpace.html" target="_self">mySpace</a></div>
+            <div><a href="Account.html" target="_self">Account</a></div>
+            <div><a href="about.html" target="_self">About</a></div>
+        </div>
+    </header>
+    <div class="content">
+
+        <div class="collections">
+            <figure>
+                <img src="img/angels-and-deamons.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Angels and Deamons</h3>
+                        <a href="Account.html">Lend</a>
+                        <a href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/blink.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Blink, THe Power of Thinking Without Thinking</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/born-a-crime.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Born a Crime</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/can-love-happen-twice.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Can Love Happen Twice</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/chamber-of-secrets.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Chamber of Secters</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/charlie-borne.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Charlie Borne and The Castle of Mirrors</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/da-vinci-code.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Da Vinci Code</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/deathly-hallows.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Deathly Hallows</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/deception-point.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Deception Point</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/digital fortress.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Digital Fortress</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/five-point-someone.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Five Point Someone</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/goblet-of-fire.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Goblet of Fire</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/half-blood-prince.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Half Blood Prince</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/i-too-had-a-love-story.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>I Too Had a Love Story</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/ignited-minds.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Ignited Minds</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/india-2020.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>India 2020</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/inferno.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Inferno</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/it's-a-kind-of-funny-story.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>It's Kind of a Funny Story</h3>
+                        <a href="Account.html">Lend</a>
+                        <a id="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/listening(101).jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Listening(101)</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/love-stories-that-touched-my-heart.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Love Stories That Touched My Heart</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/me-and-my-shadow.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Me and My Shadow</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/my-brief-history.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>My Brief History</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/my-journey.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>My Journey</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/oliver-twist.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Oliver Twist</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/order-of-pheonix.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Order of Pheonix</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/origin.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Origin</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/philosopher's-stone.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Philosopher's Stone</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/prisoner-of-azkaban.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Prisoner of Azkaban</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/reality-at-dawn.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Reality at Dawn</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/romeo-and-juliet.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Romeo and Juliet</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/school-of-wizardry.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The School of Wizardry</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the--perks-of-being-a-wallflower.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Perks of Being a Wallflower</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-adventures-of-sherlock-holmes.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Adventures of Sherlock Holmes</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-alchemist.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Alchemist</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-book-theif.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Book Theif</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-broken-window.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>THe Broken Window</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-buccaneres.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Buccaneers</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-canterville-ghost.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Canterville Ghost</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-cursed-child.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Harry Potter and The Cursed Child</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-fifth-horseman.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Fifth Horseman</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-forth-of-july.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Forth of July</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-lost-symbol.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Lost Symbol</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-subtle-art-of-not-giving-a-f*ck.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Subtle Art of Not Giving a F*uk</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-third-degree.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Third Degree</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/the-worlds-of-chrestomanci.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>The Worlds of Chrestomanci, Charmed Life</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/wings-of-fire.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Wings of Fire</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="img/yes-please.jpg">
+                <figcaption>
+                    <div class="options">
+                        <h3>Yes Please</h3>
+                        <a href="Account.html">Lend</a>
+                        <a class="sec" href="#">More Info</a>
+                    </div>
+                </figcaption>
+            </figure>
+
+
+
+        </div>
+
+    </div>
+    <footer>
+        <p>© Pegasus Projects INC. All rights reserved</p>
+
+    </footer>
+</body>
