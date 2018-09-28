@@ -88,15 +88,20 @@ footer {
     font-size: 1.5rem;
     width: 100%;
 }
-@media screen and (max-width: 860px) {
-            header {
-                flex-direction: column;
-            }
-            .menu div {
-                margin-right: 0;
-            }
-        }
-@media screen and (max-width: 400px) {
-            html {
-                font-size: 43.8%;
-            }
+@media (max-width: 576px) {
+    html {
+        font-size: 31.2%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 43.7%;
+    }
+    header {
+        flex-direction: column;
+    }
+    .menu div {
+        margin-right: 0;
+    }
+}
